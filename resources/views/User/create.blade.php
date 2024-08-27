@@ -19,8 +19,14 @@
             </div>
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
-                <label for="role_name">Role Name</label>
-                <input type="text" class="form-control" id="role_name" name="role_name" placeholder="Enter role name">
+                <label for="role_name">Role</label>
+                <select class="form-control" id="role_name" name="role_name">
+                  <option value="">Select Role</option>
+                  <option value="Admin">Admin</option>
+                  <option value="Agent">Agent</option>
+                  <option value="Customer">Customer</option>
+                  <option value="Partner">Partner</option>
+                </select>
               </div>
             </div>
             <div class="col-md-6 col-lg-4">
@@ -37,12 +43,11 @@
             </div>
           </div>
           <div class="card-action">
-        <button class="btn btn-success">Submit</button>
-        <button class="btn btn-danger">Cancel</button>
-      </div>
+            <button class="btn btn-success">Submit</button>
+            <button class="btn btn-danger">Cancel</button>
+          </div>
         </form>
       </div>
-     
     </div>
   </div>
 </div>

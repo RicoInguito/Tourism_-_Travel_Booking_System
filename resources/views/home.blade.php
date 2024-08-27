@@ -53,8 +53,7 @@
                 src='{{asset("dash_board/assets/img/kaiadmin/logo_light.svg")}}'
                 alt="navbar brand"
                 class="navbar-brand"
-                height="20"
-              />
+                height="20"/>
             </a>
             <div class="nav-toggle">
               <button class="btn btn-toggle toggle-sidebar">
@@ -97,41 +96,41 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../../documentation/index.html">
+                <a href="#">
                   <i class="fas fa-users"></i>
-                  <p>Users</p>
+                  <p>Destinations</p>
+                  <span class="badge badge-secondary"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fas fa-users"></i>
+                  <p>Tours</p>
                   <span class="badge badge-secondary"></span>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="../../documentation/index.html">
                   <i class="fas fa-users"></i>
-                  <p>Users</p>
+                  <p>cccc</p>
                   <span class="badge badge-secondary"></span>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="../../documentation/index.html">
                   <i class="fas fa-users"></i>
-                  <p>Users</p>
+                  <p>dddd</p>
                   <span class="badge badge-secondary"></span>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="../../documentation/index.html">
                   <i class="fas fa-users"></i>
-                  <p>Users</p>
+                  <p>eeeee</p>
                   <span class="badge badge-secondary"></span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="../../documentation/index.html">
-                  <i class="fas fa-users"></i>
-                  <p>Users</p>
-                  <span class="badge badge-secondary"></span>
-                </a>
-              </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarLayouts">
                   <i class="fas fa-th-list"></i>
                   <p>Sidebar Layouts</p>
@@ -294,14 +293,13 @@
                       </a>
                     </li>
                   </ul>
-                </div>
+                </div> -->
               </li>
             </ul>
           </div>
         </div>
       </div>
       <!-- End Sidebar -->
-
       <div class="main-panel">
         <div class="main-header">
           <div class="main-header-logo">
@@ -630,14 +628,12 @@
                     class="dropdown-toggle profile-pic"
                     data-bs-toggle="dropdown"
                     href="#"
-                    aria-expanded="false"
-                  >
+                    aria-expanded="false">
                     <div class="avatar-sm">
                       <img
                         src='{{asset("dash_board/assets/img/profile.jpg")}}'
                         alt="..."
-                        class="avatar-img rounded-circle"
-                      />
+                        class="avatar-img rounded-circle"/>
                     </div>
                     <span class="profile-username">
                       <span class="op-7">Hi,</span>
@@ -652,8 +648,7 @@
                             <img
                               src='{{asset("dash_board/assets/img/profile.jpg")}}'
                               alt="image profile"
-                              class="avatar-img rounded"
-                            />
+                              class="avatar-img rounded"/>
                           </div>
                           <div class="u-text">
                             <h4>Hizrian</h4>
@@ -661,8 +656,7 @@
                             <a
                               href="profile.html"
                               class="btn btn-xs btn-secondary btn-sm"
-                              >View Profile</a
-                            >
+                              >View Profile</a>
                           </div>
                         </div>
                       </li>
@@ -913,9 +907,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="custom-toggle">
-          <i class="icon-settings"></i>
         </div>
       </div>
       <!-- End Custom template -->

@@ -9,8 +9,7 @@
                       <h4 class="card-title">Users</h4>
                       <a
                         class="btn btn-primary btn-round ms-auto"
-                        href="{{route('users.create')}}"
-                      >
+                        href="{{route('users.create')}}">
                         <i class="fa fa-plus"></i>
                         Add User
                       </a>
@@ -23,8 +22,7 @@
                       id="addRowModal"
                       tabindex="-1"
                       role="dialog"
-                      aria-hidden="true"
-                    >
+                      aria-hidden="true">
                       <div class="modal-dialog" role="document">
                         <div class="modal-content">
                           <div class="modal-header border-0">
@@ -36,8 +34,7 @@
                               type="button"
                               class="close"
                               data-dismiss="modal"
-                              aria-label="Close"
-                            >
+                              aria-label="Close">
                               <span aria-hidden="true">&times;</span>
                             </button>
                           </div>
@@ -55,8 +52,7 @@
                                       id="addName"
                                       type="text"
                                       class="form-control"
-                                      placeholder="fill name"
-                                    />
+                                      placeholder="fill name"/>
                                   </div>
                                 </div>
                                 <div class="col-md-6 pe-0">
@@ -66,8 +62,7 @@
                                       id="addPosition"
                                       type="text"
                                       class="form-control"
-                                      placeholder="fill position"
-                                    />
+                                      placeholder="fill position"/>
                                   </div>
                                 </div>
                                 <div class="col-md-6">
@@ -77,8 +72,7 @@
                                       id="addOffice"
                                       type="text"
                                       class="form-control"
-                                      placeholder="fill office"
-                                    />
+                                      placeholder="fill office"/>
                                   </div>
                                 </div>
                               </div>
@@ -88,15 +82,13 @@
                             <button
                               type="button"
                               id="addRowButton"
-                              class="btn btn-primary"
-                            >
+                              class="btn btn-primary">
                               Add
                             </button>
                             <button
                               type="button"
                               class="btn btn-danger"
-                              data-dismiss="modal"
-                            >
+                              data-dismiss="modal">
                               Close
                             </button>
                           </div>
@@ -107,24 +99,23 @@
                     <div class="table-responsive">
                       <table
                         id="add-row"
-                        class="display table table-striped table-hover"
-                      >
+                        class="display table table-striped table-hover">
                         <thead>
                           <tr>
-                            <th>Name</th>
-                            <th>Role</th>
-                            <th>Email</th>
-                            <th style="width: 10%">Action</th>
+                            <th><h5>Name</h3></th>
+                            <th><h5>Role</h5></th>
+                            <th><h5>Email</h5></th>
+                            <th style="width: 10%"><h5>Action</h5></th>
                           </tr>
                         </thead>
-                        <tfoot>
+                        <!-- <tfoot>
                           <tr>
                             <th>Name</th>
                             <th>Role</th>
                             <th>Email</th>
                             <th>Action</th>
                           </tr>
-                        </tfoot>
+                        </tfoot> -->
                         <tbody>
                         @foreach ($users as  $user)
                           <tr>
@@ -139,8 +130,7 @@
                                   data-bs-toggle="tooltip"
                                   title=""
                                   class="btn btn-link btn-primary btn-lg"
-                                  data-original-title="Edit Task"
-                                >
+                                  data-original-title="Edit Task">
                                   <i class="fa fa-edit"></i>
                                 </a>
                                 <form action="{{route('users.destroy', $user->id)}}" method="post">
@@ -151,8 +141,7 @@
                                   data-bs-toggle="tooltip"
                                   title=""
                                   class="btn btn-link btn-danger"
-                                  data-original-title="Remove"
-                                >
+                                  data-original-title="Remove">
                                   <i class="fa fa-times"></i>
                                 </button>
                                 </form>
