@@ -110,7 +110,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../../documentation/index.html">
+                <a href="{{route('bookings.index')}}">
                   <i class="fas fa-users"></i>
                   <p>cccc</p>
                   <span class="badge badge-secondary"></span>
