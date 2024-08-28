@@ -3,6 +3,8 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\TourController;
+use App\Http\Controllers\ToursController;
+use App\Http\Controllers\BookingsController;
 use Illuminate\Support\Facades\Route;
 
 /*
