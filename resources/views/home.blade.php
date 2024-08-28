@@ -97,16 +97,16 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../../documentation/index.html">
+                <a href="{{route('tours.index')}}">
                   <i class="fas fa-users"></i>
-                  <p>Users</p>
+                  <p>Tours</p>
                   <span class="badge badge-secondary"></span>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../../documentation/index.html">
+                <a href="{{route('bookings.index')}}">
                   <i class="fas fa-users"></i>
-                  <p>Users</p>
+                  <p>Bookings</p>
                   <span class="badge badge-secondary"></span>
                 </a>
               </li>
