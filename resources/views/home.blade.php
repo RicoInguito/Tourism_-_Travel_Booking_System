@@ -97,7 +97,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../../documentation/index.html">
+                <a href="{{route('destinations.index')}}">
                   <i class="fas fa-map-marker-alt"></i>
                   <p>Destinations</p>
                   <span class="badge badge-secondary"></span>
