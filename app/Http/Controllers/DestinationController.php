@@ -38,7 +38,7 @@ class DestinationController extends Controller
             'name' => 'required|string|max:255',
             'description' => 'required|string',
             'location' => 'required|string|max:255',
-            'price' => 'required|numeric',
+            'price' => 'required|integer',
         ]);
 
         // Store the destination
@@ -50,9 +50,11 @@ class DestinationController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Destination $destination)
+    public function show(Destination $destination): View
     {
         //
+        $tours = Destination::find($id);
+        return view('tours.show')->with('tours', $tours);
     }
 
     /**
