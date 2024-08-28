@@ -110,6 +110,7 @@
                 >
                     <thead>
                         <tr>
+                            <th>ID</th>
                             <th>Booking ID</th>
                             <th>Tour ID</th>
                             <th>User ID</th>
@@ -131,7 +132,7 @@
                             <td>{{ ucfirst($booking->booking_id) }}</td>
                             <td>{{ ucfirst($booking->tour_id) }}</td>
                             <td>{{ ucfirst($booking->user_id) }}</td>
-                            <td>{{ $booking->booking_date }}</td>
+                            <td>{{ ucfirst($booking->booking_date) }}</td>
                             <td>
                                 <div class="form-button-action">
                                     <a

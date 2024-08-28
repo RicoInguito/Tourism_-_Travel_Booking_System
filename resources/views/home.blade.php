@@ -31,6 +31,7 @@
           sessionStorage.fonts = true;
         },
       });
+      
     </script>
 
     <!-- CSS Files -->
@@ -96,16 +97,23 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#">
-                  <i class="fas fa-users"></i>
+                <a href="../../documentation/index.html">
+                  <i class="fas fa-map-marker-alt"></i>
                   <p>Destinations</p>
                   <span class="badge badge-secondary"></span>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#">
-                  <i class="fas fa-users"></i>
+                <a href="{{route('tours.index')}}">
+                  <i class="fas fa-route"></i>
                   <p>Tours</p>
+                  <span class="badge badge-secondary"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('bookings.index')}}">
+                  <i class="fas fa-users"></i>
+                  <p>Bookings</p>
                   <span class="badge badge-secondary"></span>
                 </a>
               </li>
