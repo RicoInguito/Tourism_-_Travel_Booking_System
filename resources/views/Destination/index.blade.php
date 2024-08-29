@@ -6,13 +6,13 @@
                 <div class="card">
                   <div class="card-header">
                     <div class="d-flex align-items-center">
-                      <h4 class="card-title">Tours</h4>
+                      <h4 class="card-title">Destinations</h4>
                       <a
                         class="btn btn-primary btn-round ms-auto"
-                        href="{{route('tours.create')}}"
+                        href="{{route('destinations.create')}}"
                       >
                         <i class="fa fa-plus"></i>
-                        Add Tours
+                        Add Destinations
                       </a>
                     </div>
                   </div>
@@ -112,30 +112,24 @@
                         <thead>
                           <tr>
                             <th>Name</th>
-                            <th>Description</th>
-                            <th>Destination_ID</th>
+                            <th>Desrciption</th>
+                            <th>Location</th>
+                            <th>Price</th>
                             <th style="width: 10%">Action</th>
                           </tr>
                         </thead>
-                        <!-- <tfoot>
-                          <tr>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Destination ID</th>
-                            <th>Action</th>
-                          </tr>
-                        </tfoot> -->
                         <tbody>
-                        @foreach ($tours as  $tour)
+                        @foreach ($destinations as  $destination)
                           <tr>
-                            <td>{{ucfirst($tour->name)}}</td>
-                            <td>{{ucfirst($tour->description)}}</td>
-                            <td>{{$tour->destination_id}}</td>
+                            <td>{{ucfirst($destination->name)}}</td>
+                            <td>{{ucfirst($destination->description)}}</td>
+                            <td>{{ucfirst($destination->location)}}</td>
+                            <td>{{$destination->price}}</td>
                             <td>
                               <div class="form-button-action">
                                 <a
                                   type="button"
-                                  href="{{route('tours.edit', $tour->id)}}"
+                                  href="{{route('destinations.edit', $destination->id)}}"
                                   data-bs-toggle="tooltip"
                                   title=""
                                   class="btn btn-link btn-primary btn-lg"
@@ -143,7 +137,7 @@
                                 >
                                   <i class="fa fa-edit"></i>
                                 </a>
-                                <form action="{{route('tours.destroy', $tour->id)}}" method="post">
+                                <form action="{{route('destinations.destroy', $destination->id)}}" method="post">
                                     @csrf
                                     @method('DELETE')
                                 <button
