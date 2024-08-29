@@ -61,7 +61,7 @@
                 <h3 class="header-text">
                     <em class="header-text">So we are here to guide you</em>
                 </h3><br />
-                <a href="asset/#about" class="btn header-btn">Find Out More</a>
+                <a href="/login" class="btn header-btn">Login</a>
                 <br/>
                 <a href="asset/#about"><img src="asset/img/direction.png" class="space" alt="Direction"></a>
             </div>
