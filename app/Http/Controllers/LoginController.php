@@ -11,7 +11,7 @@ class LoginController extends Controller
     // Method to display the login page
     public function login()
     {
-        return view('home'); // Make sure you have a `login.blade.php` in the `resources/views` folder.
+        return view('login'); // Make sure you have a `login.blade.php` in the `resources/views` folder.
     }
 
     // Method to handle login submission
