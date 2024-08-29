@@ -12,22 +12,28 @@
           @csrf
           @method('PUT')
           <div class="row">
+          <div class="col-md-6 col-lg-4">
+              <div class="form-group">
+                <label for="user_file">Upload File</label>
+                <input type="file" class="form-control" id="user_file" name="profile_image" required>
+              </div>
+            </div>
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
                 <label for="name">First Name</label>
-                <input type="text" class="form-control" value="{{$user->first_name}}" id="name" name="first_name" placeholder="Enter your name">
+                <input type="text" class="form-control" value="{{$user->first_name}}" id="name" name="first_name" placeholder="Enter your name" required>
               </div>
             </div>
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
                 <label for="name">Last Name</label>
-                <input type="text" class="form-control" value="{{$user->last_name}}" id="name" name="last_name" placeholder="Enter your name">
+                <input type="text" class="form-control" value="{{$user->last_name}}" id="name" name="last_name" placeholder="Enter your name" required>
               </div>
             </div>
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
                 <label for="role_name">Role</label>
-                <select class="form-control" id="role_name" name="role_name">
+                <select class="form-control" id="role_name" name="role_name" required>
                   <option value="">Select Role</option>
                   <option value="Admin" {{ $user->role_name == 'Admin' ? 'selected' : '' }}>Admin</option>
                   <option value="Agent" {{ $user->role_name == 'Agent' ? 'selected' : '' }}>Agent</option>
@@ -40,7 +46,7 @@
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control"  value="{{$user->email}}" id="email" name="email" placeholder="Enter your email">
+                <input type="email" class="form-control"  value="{{$user->email}}" id="email" name="email" placeholder="Enter your email" required>
               </div>
             </div>
           </div>

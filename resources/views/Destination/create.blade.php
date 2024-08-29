@@ -26,19 +26,19 @@
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
                 <label for="location">Location</label>
-                <input type="text" class="form-control" id="location" name="location" placeholder="Enter Destination_ID" required>
+                <input type="text" class="form-control" id="location" name="location" placeholder="Enter Location" required>
               </div>
             </div>
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
                 <label for="price">Price</label>
-                <input type="text" class="form-control" id="price" name="price" placeholder="Enter Price" required>
+                <input type="number" class="form-control" id="price" name="price" placeholder="Enter Price" required>
               </div>
             </div>
           </div>
           <div class="card-action">
         <button class="btn btn-success">Submit</button>
-        <button class="btn btn-danger">Cancel</button>
+        <a href="{{route('destinations.index')}}" class="btn btn-danger">Cancel</a>
         
       </div>
         </form>

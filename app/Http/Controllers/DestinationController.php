@@ -46,7 +46,9 @@ class DestinationController extends Controller
     //
     public function update(Request $request, string $id): RedirectResponse
     {
+        // dd($request->all());
         $destinations = Destination::find($id);
+        // dd($destinations);
         $input = $request->all();
         $destinations->update($input);
         return redirect('destinations')->with('flash_message', 'Tours Updated!');  

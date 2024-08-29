@@ -40,10 +40,18 @@ class UserController extends Controller
         'email' => 'email|unique:users|required',
         'password' => 'required|min:8',
        ]);
-
+//  dd($request->all());
+// dd('aw');
+       if($request->hasFile('profile_image')){
+        // dd('aw');
+        $image = $request->file('profile_image');
+        $imagePath = $image->store('images', 'public');
+        $user['profile_image'] = $imagePath;
+        //  dd('aw');
+       }
        
-// 
-      
+    //    dd($user['profile_image']);
+
     User::create($user);
 
     return redirect()->route('users.index')->with('success', 'created user');
@@ -64,7 +72,7 @@ class UserController extends Controller
     {
         //
         // dd('aw');
-        $user = User::findorFail($id)->latest()->first();
+        $user = User::findorFail($id)->first();
         return view('User.edit', compact('user'));
     }
 
@@ -75,15 +83,23 @@ class UserController extends Controller
     {
         //
         // dd($id);
-        $user = User::findorFail($id)->latest()->first();
+        $user = User::findorFail($id)->first();
 
-
+        if($request->hasFile('profile_image')){
+            // dd('aw');
+            $image = $request->file('profile_image');
+            $imagePath = $image->store('images', 'public');
+            $user->profile_image = $imagePath;
+            //  dd('aw');
+           }
+        //    dd( $imagePath );
         $user->update([
             'role_name' => $request->role_name,
             'first_name' => $request->first_name ,
             'last_name' => $request->last_name,
             'email' => $request->email,
         ]);
+        // dd($user);
 
         $user->save();
         

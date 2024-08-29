@@ -27,21 +27,19 @@
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
                 <label for="location">Location</label>
-                <input type="location" class="form-control"  value="{{$destinations->location}}" id="location" name="destination_id" placeholder="Enter your Destination Id">
+                <input type="location" class="form-control"  value="{{$destinations->location}}" id="location" name="location" placeholder="Enter your Destination Id">
               </div>
             </div>
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
-              <div>
                 <label for="price">Price</label>
-                <input type="number" step="0.01" name="price" placeholder="Enter Price" required>
-               </div>
+                <input type="number" class="form-control" id="price" name="price" value="{{$destinations->price}}" placeholder="Enter Price" required>
               </div>
             </div>
           </div>
           <div class="card-action">
         <button class="btn btn-success">Update</button>
-        <button class="btn btn-danger">Cancel</button>
+        <a href="{{route('destinations.index')}}" class="btn btn-danger">Cancel</a>
       </div>
         </form>
       </div>

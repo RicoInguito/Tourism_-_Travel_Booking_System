@@ -14,7 +14,7 @@
           <div class="col-md-6 col-lg-4">
               <div class="form-group">
                 <label for="user_file">Upload File</label>
-                <input type="file" class="form-control" id="user_file" name="user_file" required>
+                <input type="file" class="form-control" id="user_file" name="profile_image" required>
               </div>
             </div>
           <div class="col-md-6 col-lg-4">
