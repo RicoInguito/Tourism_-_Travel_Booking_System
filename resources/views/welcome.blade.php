@@ -50,9 +50,6 @@
                 <li>
                     <a href="asset/#contact">Contact</a>
                 </li>
-                <li>
-                    <a href="{{route('login')}}">Login</a>
-                </li>
             </ul>
         </div>
         <!-- /Side Menu -->
