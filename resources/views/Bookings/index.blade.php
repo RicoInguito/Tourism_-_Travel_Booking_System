@@ -110,7 +110,6 @@
                 >
                     <thead>
                         <tr>
-                            <th>ID</th>
                             <th>Booking ID</th>
                             <th>Tour ID</th>
                             <th>User ID</th>
@@ -169,5 +168,4 @@
         </div>
     </div>
 </div>
-
 @endsection
