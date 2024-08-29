@@ -27,6 +27,7 @@ Route::get('/index', [HomeController::class, 'dash']);
 
 //Users
 Route::resource('users', UserController::class);
-
+//Tours
 Route::resource('tours', ToursController::class);
+//Bookings
 Route::resource('bookings', BookingsController::class);

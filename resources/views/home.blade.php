@@ -97,15 +97,22 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{route('tours.index')}}">
+                <a href="../../documentation/index.html">
                   <i class="fas fa-users"></i>
+                  <p>Destinations</p>
+                  <span class="badge badge-secondary"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('tours.index')}}">
+                  <i class="fas fa-route"></i>
                   <p>Tours</p>
                   <span class="badge badge-secondary"></span>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{route('bookings.index')}}">
-                  <i class="fas fa-users"></i>
+                  <i class="fas fa-clipboard-list "></i>
                   <p>Bookings</p>
                   <span class="badge badge-secondary"></span>
                 </a>
@@ -674,7 +681,7 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Account Setting</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Logout</a>
+                        <a class="dropdown-item" href="{{route('logout')}}">Logout</a>
                       </li>
                     </div>
                   </ul>

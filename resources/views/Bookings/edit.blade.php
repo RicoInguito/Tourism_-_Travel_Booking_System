@@ -32,8 +32,8 @@
             </div>
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
-                <label for="booking_date">Booking Date</label>
-                <input type="booking_date" class="form-control"  value="{{$bookings->booking_date}}" id="booking_date" name="booking_date" placeholder="Enter your User Id">
+                <label for="date">Booking Date</label>
+                <input type="date" class="form-control"  value="{{$bookings->date}}" id="date" name="date" placeholder="Enter your User Id">
               </div>
             </div>
           </div>
