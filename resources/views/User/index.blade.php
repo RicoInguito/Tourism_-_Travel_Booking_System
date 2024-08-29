@@ -102,23 +102,17 @@
                         class="display table table-striped table-hover">
                         <thead>
                           <tr>
-                            <th><h5>Name</h3></th>
-                            <th><h5>Role</h5></th>
-                            <th><h5>Email</h5></th>
-                            <th style="width: 10%"><h5>Action</h5></th>
-                          </tr>
-                        </thead>
-                        <!-- <tfoot>
-                          <tr>
+                            <th>ID</th>
                             <th>Name</th>
                             <th>Role</th>
                             <th>Email</th>
-                            <th>Action</th>
+                            <th style="width: 10%">Action</th>
                           </tr>
-                        </tfoot> -->
+                        </thead>
                         <tbody>
                         @foreach ($users as  $user)
                           <tr>
+                            <td>{{ucfirst($user->id)}}</td>
                             <td>{{ucfirst($user->name)}}</td>
                             <td>{{ucfirst($user->role_name)}}</td>
                             <td>{{$user->email}}</td>

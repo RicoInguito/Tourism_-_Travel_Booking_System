@@ -1,83 +1,62 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Models\Destination;
 use Illuminate\Http\RedirectResponse;
+use App\Models\Destination;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 
 class DestinationController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
+    //
+    public function index(): View
     {
-        //
         $destinations = Destination::all();
         return view('destination.index')->with ('destinations', $destinations);
     }
-
-    /**
-     * Show the form for creating a new resource.
-     */
+    
+    //
     public function create(): View
     {
-        //
         return view('destination.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+    //
     public function store(Request $request): RedirectResponse
     {
-        //
-        $validatedData = $request->validate([
-            'name' => 'required|string|max:255',
-            'description' => 'required|string',
-            'location' => 'required|string|max:255',
-            'price' => 'required|integer',
-        ]);
-
-        // Store the destination
-        Destination::create($validatedData);
-
-        return redirect('destination')->with('flash_message', 'Destination Added!');
+        $input = $request->all();
+        Destination::create($input);
+        return redirect('destinations')->with ('flash_message', 'Tours Added!');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(Destination $destination): View
+    //
+    public function show(string $id): View
     {
-        //
-        $tours = Destination::find($id);
-        return view('tours.show')->with('tours', $tours);
+        $destinations = Destination::find($id);
+        return view('destination.show')->with('destinations', $destinations);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Destination $destination)
+    //
+    public function edit(string $id): View
     {
-        //
+        $destinations = Destination::find($id);
+        return view('destination.edit')->with('destinations', $destinations);
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Destination $destination)
+    //
+    public function update(Request $request, string $id): RedirectResponse
     {
-        //
+        $destinations = Destination::find($id);
+        $input = $request->all();
+        $destinations->update($input);
+        return redirect('destinations')->with('flash_message', 'Tours Updated!');  
+    }
+    
+    //
+    public function destroy(string $id): RedirectResponse
+    {
+        Destination::destroy($id);
+        return redirect('destinations')->with('flash_message', 'Tours Deleted!'); 
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Destination $destination)
-    {
-        //
-    }
 }

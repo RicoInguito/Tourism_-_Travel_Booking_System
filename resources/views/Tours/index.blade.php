@@ -111,23 +111,17 @@
                       >
                         <thead>
                           <tr>
+                            <th>ID</th>
                             <th>Name</th>
                             <th>Description</th>
                             <th>Destination_ID</th>
                             <th style="width: 10%">Action</th>
                           </tr>
                         </thead>
-                        <!-- <tfoot>
-                          <tr>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Destination ID</th>
-                            <th>Action</th>
-                          </tr>
-                        </tfoot> -->
                         <tbody>
                         @foreach ($tours as  $tour)
                           <tr>
+                            <td>{{ucfirst($tour->id)}}</td>
                             <td>{{ucfirst($tour->name)}}</td>
                             <td>{{ucfirst($tour->description)}}</td>
                             <td>{{$tour->destination_id}}</td>

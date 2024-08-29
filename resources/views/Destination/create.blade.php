@@ -26,7 +26,7 @@
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
                 <label for="location">Location</label>
-                <input type="text" class="form-control" id="location" name="location" placeholder="Enter Destinations" required>
+                <input type="text" class="form-control" id="location" name="location" placeholder="Enter Destination_ID" required>
               </div>
             </div>
             <div class="col-md-6 col-lg-4">

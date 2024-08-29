@@ -111,6 +111,7 @@
                       >
                         <thead>
                           <tr>
+                            <th>ID</th>
                             <th>Name</th>
                             <th>Desrciption</th>
                             <th>Location</th>
@@ -121,6 +122,7 @@
                         <tbody>
                         @foreach ($destinations as  $destination)
                           <tr>
+                            <td>{{ucfirst($destination->id)}}</td>
                             <td>{{ucfirst($destination->name)}}</td>
                             <td>{{ucfirst($destination->description)}}</td>
                             <td>{{ucfirst($destination->location)}}</td>

@@ -110,9 +110,9 @@
                 >
                     <thead>
                         <tr>
-                            <th>Booking ID</th>
-                            <th>Tour ID</th>
-                            <th>User ID</th>
+                            <th>ID</th>
+                            <th>Tour_ID</th>
+                            <th>User_ID</th>
                             <th>Booking Date</th>
                             <th style="width: 10%">Action</th>
                         </tr>
@@ -128,7 +128,7 @@
                     <tbody>
                         @foreach ($bookings as $booking)
                         <tr>
-                            <td>{{ ucfirst($booking->booking_id) }}</td>
+                            <td>{{ ucfirst($booking->id) }}</td>
                             <td>{{ ucfirst($booking->tour_id) }}</td>
                             <td>{{ ucfirst($booking->user_id) }}</td>
                             <td>{{ ucfirst($booking->booking_date) }}</td>

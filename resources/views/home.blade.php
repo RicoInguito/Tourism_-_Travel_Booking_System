@@ -112,7 +112,7 @@
               </li>
               <li class="nav-item">
                 <a href="{{route('bookings.index')}}">
-                  <i class="fas fa-users"></i>
+                  <i class="fas fa-calendar-check"></i>
                   <p>Bookings</p>
                   <span class="badge badge-secondary"></span>
                 </a>

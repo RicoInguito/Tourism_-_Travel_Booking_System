@@ -26,16 +26,10 @@
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
                 <label for="destination_id">Destination ID</label>
-                <input type="text" class="form-control" id="destination_id" name="destination_id" placeholder="Enter Destinations" required>
+                <input type="text" class="form-control" id="destination_id" name="destination_id" placeholder="Enter Destination_ID" required>
 
               </div>
             </div>
-            <!-- <div class="col-md-6 col-lg-4">
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
-              </div>
-            </div> -->
           </div>
           <div class="card-action">
         <button class="btn btn-success">Submit</button>
