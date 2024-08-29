@@ -57,9 +57,9 @@
         <!-- Full Page Image Header Area -->
         <div id="top" class="header">
             <div class="vert-text parallax">
-                <h1 class="header-text">Travel the world</h1>
+                <h1 class="header-text">Explore the Beauty of the Philippines!!</h1>
                 <h3 class="header-text">
-                    <em class="header-text">So we are here to guide you</em>
+                    <em class="header-text">By discovering the unparalleled beauty of the Philippines.</em>
                 </h3><br />
                 <a href="/login" class="btn header-btn">Login</a>
                 <br/>
@@ -83,10 +83,10 @@
                         </div>
                         <div class="col-sm-8">
                           <h4>Our Working Place</h4>
-                          <p>Vestibulum ligut praesent commodo cursus magna, consectetur et. Cum socis natoque penatibus et magnis dis tellus parturient pharetra montes. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                          <p>Our travel booking system is designed to make your travel experience effortless and enjoyable. We provide a user-friendly platform where you can easily search for flights, accommodations, and transportation options all in one place. Our system allows you to compare prices, select the best deals, and make secure bookings with just a few clicks. From initial planning to final confirmation, we streamline the entire process, offering real-time updates and support to ensure your journey is smooth and hassle-free. Whether you're traveling for business or leisure, our system is here to help you manage every detail with ease and convenience.</p>
                         </div>
                       </div>
-                      <div class="divide50"></div>
+                      <!-- <div class="divide50"></div>
                       <div class="row">
                         <div class="col-sm-4">
                           <h4>Our Journeys</h4><hr>
@@ -117,12 +117,12 @@
                                 <div class="bar" style="width: 50%;"></div>
                               </div>
                             </li>
-                          </ul>
+                          </ul> -->
                           <!-- /.progress-list --> 
                         </div>
                         <!-- /.col -->
                         
-                        <div class="col-sm-4">
+                        <!-- <div class="col-sm-4">
                           <h4>Why Choose Us?</h4><hr>
                           <p>Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. </p>
                           <div class="divide10"></div>
@@ -134,35 +134,35 @@
                             <li>Sed posuere consectetur est at lobortis.</li>
                             <li>Aenean lacinia bibendum nulla sed consectetur.</li>
                           </ol>
-                        </div>
+                        </div> -->
                         <!-- /.col -->
                         
-                        <div class="col-sm-4">
+                        <!-- <div class="col-sm-4">
                           <h4>Our Transports</h4><hr>
                           <div class="divide10"></div>
                           <div class="services-2">
-                            <div class="icon"> <img src="asset/img/icon-web.png" data-src="asset/style/images/icons/icon-web.png" data-ret="style/images/icons/icon-web@2x.png" class="retina" alt="" /> </div>
+                            <div class="icon"> <img src="asset/img/icon-web.png" data-src="asset/style/images/icons/icon-web.png" data-ret="style/images/icons/icon-web@2x.png" class="retina" alt="" /> </div> -->
                             <!-- /.icon -->
-                            <div class="text">
+                            <!-- <div class="text">
                               <h5>Responsive Layout</h5>
                               <p>Etiam porta malesuada magna.</p>
-                            </div>
+                            </div> -->
                             <!-- /.text -->
-                            <div class="divide20"></div>
-                            <div class="icon"> <img src="asset/img/icon-heart.png" data-src="asset/style/images/icons/icon-heart.png" data-ret="style/images/icons/icon-heart@2x.png" class="retina" alt="" /> </div>
+                            <!-- <div class="divide20"></div>
+                            <div class="icon"> <img src="asset/img/icon-heart.png" data-src="asset/style/images/icons/icon-heart.png" data-ret="style/images/icons/icon-heart@2x.png" class="retina" alt="" /> </div> -->
                             <!-- /.icon -->
-                            <div class="text">
+                            <!-- <div class="text">
                               <h5>Flat & Clean design</h5>
                               <p>Etiam porta malesuada.</p>
-                            </div>
+                            </div> -->
                             <!-- /.text -->
-                            <div class="divide20"></div>
-                            <div class="icon"> <img src="asset/img/icon-print.png" data-src="asset/style/images/icons/icon-print.png" data-ret="style/images/icons/icon-print@2x.png" class="retina" alt="" /> </div>
+                            <!-- <div class="divide20"></div>
+                            <div class="icon"> <img src="asset/img/icon-print.png" data-src="asset/style/images/icons/icon-print.png" data-ret="style/images/icons/icon-print@2x.png" class="retina" alt="" /> </div> -->
                             <!-- /.icon -->
-                            <div class="text">
+                            <!-- <div class="text">
                               <h5>Print Design</h5>
                               <p>Etiam porta malesuada magna.</p>
-                            </div>
+                            </div> -->
                             <!-- /.text --> 
                             
                           </div>
@@ -249,16 +249,16 @@
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="grid center-block">
                             <figure class="effect-zoe">
-                                <img src="asset/img/paris.jpg" alt="paris" class="img-responsive center-block">
+                                <img src="asset/img/boracay.jpg" alt="boracay" class="img-responsive center-block">
                                 <figcaption>
-                                    <h2>Paris</h2>
+                                    <h2>Boracay Island</h2>
                                     <p class="icon-links">
                                         <a href="asset/#"><i class="fa fa-heart-o"></i></a>
                                         <a href="asset/#"><i class="fa fa-eye"></i></a>
                                         <a href="asset/#"><i class="fa fa-bookmark-o"></i></a>
                                     </p>
                                     <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien.
+                                            Boracay is well known throughout the world for its blue seas and white sand beaches. It's a great place to unwind and go water sports like windsurfing, kiteboarding, and snorkeling.
                                     </p>
                                 </figcaption>           
                             </figure>
@@ -267,16 +267,16 @@
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="grid center-block">
                             <figure class="effect-zoe">
-                                <img src="asset/img/sydney.jpg" alt="sydney" class="img-responsive center-block">
+                                <img src="asset/img/El Nido.jpg" alt="el_nido" class="img-responsive center-block">
                                 <figcaption>
-                                    <h2>Sydney</h2>
+                                    <h2>El Nido Palawan</h2>
                                     <p class="icon-links">
                                         <a href="asset/#"><i class="fa fa-heart-o"></i></a>
                                         <a href="asset/#"><i class="fa fa-eye"></i></a>
                                         <a href="asset/#"><i class="fa fa-bookmark-o"></i></a>
                                     </p>
                                     <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien.
+                                        Known for its stunning limestone cliffs, hidden lagoons, and crystal-clear waters. The Bacuit Archipelago is a must-see.
                                     </p>
                                 </figcaption>           
                             </figure>
@@ -287,16 +287,16 @@
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="grid center-block">
                             <figure class="effect-zoe">
-                                <img src="asset/img/washington.jpg" alt="washington" class="img-responsive center-block">
+                                <img src="asset/img/kawasan falls.jpg" alt="kawasan_falls" class="img-responsive center-block">
                                 <figcaption>
-                                    <h2>Washington</h2>
+                                    <h2>Kawasan Falls</h2>
                                     <p class="icon-links">
                                         <a href="asset/#"><i class="fa fa-heart-o"></i></a>
                                         <a href="asset/#"><i class="fa fa-eye"></i></a>
                                         <a href="asset/#"><i class="fa fa-bookmark-o"></i></a>
                                     </p>
                                     <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien.
+                                       Kawasan Falls is a natural wonder famous for its crystal-clear turquoise pools and cascading waterfalls. The falls are nestled in a lush, tropical forest, providing a refreshing retreat in nature.
                                     </p>
                                 </figcaption>           
                             </figure>
@@ -305,16 +305,16 @@
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="grid center-block">
                             <figure class="effect-zoe">
-                                <img src="asset/img/london.jpg" alt="london" class="img-responsive center-block">
+                                <img src="asset/img/batanes.jpg" alt="batanes" class="img-responsive center-block">
                                 <figcaption>
-                                    <h2>London</h2>
+                                    <h2>Batanes Island</h2>
                                     <p class="icon-links">
                                         <a href="asset/#"><i class="fa fa-heart-o"></i></a>
                                         <a href="asset/#"><i class="fa fa-eye"></i></a>
                                         <a href="asset/#"><i class="fa fa-bookmark-o"></i></a>
                                     </p>
                                     <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien.
+                                    Batanes is known for its dramatic landscapes, including vast rolling hills, rugged cliffs, and traditional Ivatan stone houses. The remote location and the unique culture of the Ivatan people make it a distinct destination.
                                     </p>
                                 </figcaption>           
                             </figure>
@@ -325,16 +325,16 @@
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="grid center-block">
                             <figure class="effect-zoe">
-                                <img src="asset/img/statue_of_liberty.jpg" alt="statue_of_liberty" class="img-responsive center-block">
+                                <img src="asset/img/bohol.jpg" alt="bohol" class="img-responsive center-block">
                                 <figcaption>
-                                    <h2>U.S.A</h2>
+                                    <h2>Chocolate Hills</h2>
                                     <p class="icon-links">
                                         <a href="asset/#"><i class="fa fa-heart-o"></i></a>
                                         <a href="asset/#"><i class="fa fa-eye"></i></a>
                                         <a href="asset/#"><i class="fa fa-bookmark-o"></i></a>
                                     </p>
                                     <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien.
+                                    The Chocolate Hills are a geological formation and a famous tourist attraction in Bohol. Visitors can get a panoramic view from the Chocolate Hills Complex or Sagbayan Peak.
                                     </p>
                                 </figcaption>           
                             </figure>
@@ -343,16 +343,16 @@
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="grid center-block">
                             <figure class="effect-zoe">
-                                <img src="asset/img/pizza_tower.jpg" alt="pizza_tower" class="img-responsive center-block">
+                                <img src="asset/img/banaue.jpg" alt="banaue" class="img-responsive center-block">
                                 <figcaption>
-                                    <h2>Pizza Tower</h2>
+                                    <h2>Banaue Rice Terraces</h2>
                                     <p class="icon-links">
                                         <a href="asset/#"><i class="fa fa-heart-o"></i></a>
                                         <a href="asset/#"><i class="fa fa-eye"></i></a>
                                         <a href="asset/#"><i class="fa fa-bookmark-o"></i></a>
                                     </p>
                                     <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien.
+                                       Often referred to as the "Eighth Wonder of the World," these terraces are an impressive example of ancient engineering and are still used for rice cultivation.
                                     </p>
                                 </figcaption>           
                             </figure>
