@@ -31,6 +31,7 @@
           sessionStorage.fonts = true;
         },
       });
+      
     </script>
 
     <!-- CSS Files -->
@@ -98,7 +99,7 @@
               </li>
               <li class="nav-item">
                 <a href="../../documentation/index.html">
-                  <i class="fas fa-users"></i>
+                  <i class="fas fa-map-marker-alt"></i>
                   <p>Destinations</p>
                   <span class="badge badge-secondary"></span>
                 </a>
