@@ -14,7 +14,7 @@ class UserController extends Controller
     {
         //
         $users = User::simplePaginate(5);
-        return view('User.index', compact('users'));
+        return view('User.index', compact('users'))->with('i');
     }
 
     /**
@@ -118,6 +118,6 @@ class UserController extends Controller
 
         $user->delete();
 
-        return redirect()->route('users.index');
+        return redirect()->route('users.index')->with('i');
     }
 }
