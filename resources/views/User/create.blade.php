@@ -11,7 +11,7 @@
         <form action="{{route('users.store')}}" method="POST" enctype="multipart/form-data" >
           @csrf
           <div class="row">
-          <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4">
               <div class="form-group">
                 <label for="user_file">Upload File</label>
                 <input type="file" class="form-control" id="user_file" name="profile_image" required>

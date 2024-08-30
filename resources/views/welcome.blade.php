@@ -85,85 +85,8 @@
                           <h4>Our Working Place</h4>
                           <p>Our travel booking system is designed to make your travel experience effortless and enjoyable. We provide a user-friendly platform where you can easily search for flights, accommodations, and transportation options all in one place. Our system allows you to compare prices, select the best deals, and make secure bookings with just a few clicks. From initial planning to final confirmation, we streamline the entire process, offering real-time updates and support to ensure your journey is smooth and hassle-free. Whether you're traveling for business or leisure, our system is here to help you manage every detail with ease and convenience.</p>
                         </div>
-                      </div>
-                      <!-- <div class="divide50"></div>
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <h4>Our Journeys</h4><hr>
-                          <p>Duis non lectus sit amet est imperdiet cursus elementum vitae eros. Etiam adipiscingmorbi vitae magna tellus.</p>
-                          <div class="divide5"></div>
-                          <ul class="progress-list">
-                            <li>
-                              <p>Asia <em>90%</em></p>
-                              <div class="progress plain">
-                                <div class="bar" style="width: 90%;"></div>
-                              </div>
-                            </li>
-                            <li>
-                              <p>Australia <em>80%</em></p>
-                              <div class="progress plain">
-                                <div class="bar" style="width: 80%;"></div>
-                              </div>
-                            </li>
-                            <li>
-                              <p>America <em>85%</em></p>
-                              <div class="progress plain">
-                                <div class="bar" style="width: 85%;"></div>
-                              </div>
-                            </li>
-                            <li>
-                              <p>Europe <em>50%</em></p>
-                              <div class="progress plain">
-                                <div class="bar" style="width: 50%;"></div>
-                              </div>
-                            </li>
-                          </ul> -->
-                          <!-- /.progress-list --> 
+                      </div> 
                         </div>
-                        <!-- /.col -->
-                        
-                        <!-- <div class="col-sm-4">
-                          <h4>Why Choose Us?</h4><hr>
-                          <p>Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. </p>
-                          <div class="divide10"></div>
-                          <ol class="color">
-                            <li>Donec ullamcorper nulla non metus auctor.</li>
-                            <li>Cras justo odio, dapibus ac facilisis in egestas.</li>
-                            <li>Praesent commodo cursus magna.</li>
-                            <li>Curabitur blandit tempus porttitor.</li>
-                            <li>Sed posuere consectetur est at lobortis.</li>
-                            <li>Aenean lacinia bibendum nulla sed consectetur.</li>
-                          </ol>
-                        </div> -->
-                        <!-- /.col -->
-                        
-                        <!-- <div class="col-sm-4">
-                          <h4>Our Transports</h4><hr>
-                          <div class="divide10"></div>
-                          <div class="services-2">
-                            <div class="icon"> <img src="asset/img/icon-web.png" data-src="asset/style/images/icons/icon-web.png" data-ret="style/images/icons/icon-web@2x.png" class="retina" alt="" /> </div> -->
-                            <!-- /.icon -->
-                            <!-- <div class="text">
-                              <h5>Responsive Layout</h5>
-                              <p>Etiam porta malesuada magna.</p>
-                            </div> -->
-                            <!-- /.text -->
-                            <!-- <div class="divide20"></div>
-                            <div class="icon"> <img src="asset/img/icon-heart.png" data-src="asset/style/images/icons/icon-heart.png" data-ret="style/images/icons/icon-heart@2x.png" class="retina" alt="" /> </div> -->
-                            <!-- /.icon -->
-                            <!-- <div class="text">
-                              <h5>Flat & Clean design</h5>
-                              <p>Etiam porta malesuada.</p>
-                            </div> -->
-                            <!-- /.text -->
-                            <!-- <div class="divide20"></div>
-                            <div class="icon"> <img src="asset/img/icon-print.png" data-src="asset/style/images/icons/icon-print.png" data-ret="style/images/icons/icon-print@2x.png" class="retina" alt="" /> </div> -->
-                            <!-- /.icon -->
-                            <!-- <div class="text">
-                              <h5>Print Design</h5>
-                              <p>Etiam porta malesuada magna.</p>
-                            </div> -->
-                            <!-- /.text --> 
                             
                           </div>
                           <!-- /.services-2 --> 
@@ -426,8 +349,8 @@
         </div><!-- End Contact Section -->
         
         <div class="map">
-            <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3618.727010735933!2d91.837871!3d24.907291700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1404919738144"></iframe>
-        </div>
+    <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799021186!2d-74.25987568728931!3d40.69767006425317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250b1f0a42191%3A0x6b7cb717f42e0e71!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sph!4v1634516612940!5m2!1sen!2sph"></iframe>
+</div>
         <!-- /Map -->
 
         <!-- Footer -->
@@ -436,21 +359,29 @@
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3 text-center">
                         <ul class="list-inline">
-                            <li>
+                        <li>
+                            <a href="https://www.facebook.com/PhilippineTravelJP" target="_blank">
                                 <i class="fa fa-facebook"></i>
-                            </li>
-                            <li>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://x.com/philippines" target="_blank">
                                 <i class="fa fa-twitter"></i>
-                            </li>
-                            <li>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.itsmorefuninthephilippines.com/" target="_blank">
                                 <i class="fa fa-dribbble"></i>
-                            </li>
-                            <li>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.pinterest.com" target="_blank">
                                 <i class="fa fa-pinterest"></i>
-                            </li>
+                            </a>
+                        </li>
                         </ul>
                         <hr>
-                        <p>Copyright &copy; <a href="https://themewagon.com/">Themewagon</a>  2014</p>
+                        <p>Copyright &copy;</a>  2014</p>
                         <div class="top-scroll">
                             <a href="asset/#top"><i class="fa fa-arrow-circle-up scroll"></i></a>
                         </div>
@@ -479,13 +410,11 @@
                                 <input id="password" type="password" class="form-control input-lg" placeholder="Password">
                             </div>
                             <div class="form-group">
-                                <label for="country">Which country do you want to travel?</label>
-                                <select class="form-control" id="country">
-                                    <option>Australia</option>
-                                    <option>Bangladesh</option>
-                                    <option>England</option>
-                                    <option>France</option>
-                                    <option>U.S.A</option>
+                                <label for="island">Which island do you want to travel?</label>
+                                <select class="form-control" id="island">
+                                    <option>Luzon</option>
+                                    <option>Visayas</option>
+                                    <option>Mindanao</option>
                                 </select>
                             </div>
                             

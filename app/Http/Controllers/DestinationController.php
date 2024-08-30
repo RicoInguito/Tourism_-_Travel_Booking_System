@@ -11,7 +11,7 @@ class DestinationController extends Controller
     //
     public function index(): View
     {
-        $destinations = Destination::all();
+        $destinations = Destination::all();     
         return view('destination.index')->with ('destinations', $destinations);
     }
     
@@ -23,11 +23,27 @@ class DestinationController extends Controller
 
     //
     public function store(Request $request): RedirectResponse
-    {
-        $input = $request->all();
-        Destination::create($input);
-        return redirect('destinations')->with ('flash_message', 'Tours Added!');
+{
+    // Validate the required fields (e.g., 'name' is required)
+    $validatedData = $request->validate([
+        'name' => 'required|string|max:255',
+        'description' => 'required|string',
+        // Add validation for other required fields here
+        'profile_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+    ]);
+
+    // Handle image upload if present
+    if ($request->hasFile('profile_image')) {
+        $image = $request->file('profile_image');
+        $imagePath = $image->store('images', 'public');
+        $validatedData['profile_image'] = $imagePath;
     }
+
+    // Create the destination with the validated data
+    Destination::create($validatedData);
+
+    return redirect()->route('destinations.index')->with('success', 'Destination created successfully');
+}
 
     //
     public function show(string $id): View
@@ -51,7 +67,26 @@ class DestinationController extends Controller
         // dd($destinations);
         $input = $request->all();
         $destinations->update($input);
-        return redirect('destinations')->with('flash_message', 'Tours Updated!');  
+
+        if($request->hasFile('profile_image')){
+            // dd('aw');
+            $image = $request->file('profile_image');
+            $imagePath = $image->store('images', 'public');
+            $destinations->profile_image = $imagePath;
+            //  dd('aw');
+           }
+        //    dd( $imagePath );
+        $destinations->update([
+            'name' => $request->name,
+            'description' => $request->description ,
+            'location' => $request->location,
+            'price' => $request->price,
+        ]);
+        // dd($destinations);
+
+        $destinations->save();
+        
+        return redirect()->route('destinations.index');  
     }
     
     //
