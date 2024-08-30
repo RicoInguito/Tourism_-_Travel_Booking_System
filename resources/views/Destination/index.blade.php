@@ -126,7 +126,7 @@
                             <td>{{ucfirst($destination->name)}}</td>
                             <td>{{ucfirst($destination->description)}}</td>
                             <td>{{ucfirst($destination->location)}}</td>
-                            <td>₱{{ number_format($destination->price, 2) }}</td>
+                            <td>₱ {{ number_format($destination->price, 2) }}</td>
                             <td>
                               <div class="form-button-action">
                                 <a

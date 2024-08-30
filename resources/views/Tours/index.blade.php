@@ -112,7 +112,6 @@
                         <thead>
                           <tr>
                             <th>ID</th>
-                            <th></th>
                             <th>Name</th>
                             <th>Description</th>
                             <th>Destination_ID</th>
@@ -136,7 +135,7 @@
                           @if ($tour->profile_image)
                             <img src="{{ asset('storage/'. $tour->profile_image) }}" alt="Avatar" class="rounded-circle" width="40" height="40">
                             @else
-                            <img src="{{ asset('asset/img/boracay.jpg') }}" alt="Avatar" class="rounded-circle" width="40" height="40">
+                            <img src="{{ asset('img/boracay.jpg') }}" alt="Avatar" class="rounded-circle" width="40" height="40">
                             @endif
                           </td>
                         <td>{{ ucfirst($tour->name) }}</td>
@@ -157,7 +156,7 @@
                                 <form action="{{route('tours.destroy', $tour->id)}}" method="post">
                                     @csrf
                                     @method('DELETE')
-                                <button
+                                <button 
                                   type="submit"
                                   data-bs-toggle="tooltip"
                                   title=""

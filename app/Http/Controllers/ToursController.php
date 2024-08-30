@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\RedirectResponse;
 use App\Models\Tours;
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
 use Illuminate\View\View;
 
 class ToursController extends Controller
@@ -24,8 +25,18 @@ class ToursController extends Controller
     //
     public function store(Request $request): RedirectResponse
     {
-        $input = $request->all();
-        Tours::create($input);
+    //    dd($request->all());
+       $tourist = $request->validate([
+        'name' => 'required',
+        'description' => 'required',
+        'destination_id' => 'required',
+       ]);
+
+       if($request->hasFile('profile_image')){
+        $image = $request->file('profile_image')->store('images', 'public');
+        $tourist['profile_image'] = $image;
+       }
+        Tours::create($tourist);
         return redirect('tours')->with ('flash_message', 'Tours Added!');
     }
 

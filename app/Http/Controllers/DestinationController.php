@@ -23,27 +23,27 @@ class DestinationController extends Controller
 
     //
     public function store(Request $request): RedirectResponse
-{
-    // Validate the required fields (e.g., 'name' is required)
-    $validatedData = $request->validate([
-        'name' => 'required|string|max:255',
-        'description' => 'required|string',
-        // Add validation for other required fields here
-        'profile_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
-    ]);
-
-    // Handle image upload if present
-    if ($request->hasFile('profile_image')) {
-        $image = $request->file('profile_image');
-        $imagePath = $image->store('images', 'public');
-        $validatedData['profile_image'] = $imagePath;
+    {
+        // Validate the required fields, including 'location'
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'description' => 'required|string',
+            'location' => 'required|string', // Add validation for location
+            'profile_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+        ]);
+    
+        // Handle image upload if present
+        if ($request->hasFile('profile_image')) {
+            $image = $request->file('profile_image');
+            $imagePath = $image->store('images', 'public');
+            $validatedData['profile_image'] = $imagePath;
+        }
+    
+        // Create the destination with the validated data
+        Destination::create($validatedData);
+    
+        return redirect()->route('destinations.index')->with('success', 'Destination created successfully');
     }
-
-    // Create the destination with the validated data
-    Destination::create($validatedData);
-
-    return redirect()->route('destinations.index')->with('success', 'Destination created successfully');
-}
 
     //
     public function show(string $id): View

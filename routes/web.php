@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LocationController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ToursController;
 use App\Http\Controllers\BookingsController;
@@ -41,6 +42,7 @@ Route::resource('tours', ToursController::class);
 Route::resource('bookings', BookingsController::class);
 //Destinations
 Route::resource('destinations', DestinationController::class);
+Route::resource('locations', LocationController::class);
 Auth::routes();
 Route::middleware(['auth'])->group(function () {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
