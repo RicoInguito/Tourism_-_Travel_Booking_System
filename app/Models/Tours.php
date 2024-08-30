@@ -11,5 +11,5 @@ class Tours extends Model
 
     protected $table = 'tours';
     protected $primaryKey = 'id';
-    protected $fillable = ['name', 'description', 'destination_id'];
+    protected $fillable = [ 'profile_image','name', 'description', 'destination_id'];
 }

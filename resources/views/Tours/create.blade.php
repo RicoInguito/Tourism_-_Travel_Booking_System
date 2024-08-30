@@ -11,6 +11,12 @@
         <form action="{{route('tours.store')}}" method="POST" enctype="multipart/form-data" >
           @csrf
           <div class="row">
+          <div class="col-md-6 col-lg-4">
+              <div class="form-group">
+                <label for="tour_file">Upload File</label>
+                <input type="file" class="form-control" id="tour_file" name="profile_image" required>
+              </div>
+            </div>
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
                 <label for="name">Name</label>

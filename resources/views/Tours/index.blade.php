@@ -112,6 +112,7 @@
                         <thead>
                           <tr>
                             <th>ID</th>
+                            <th></th>
                             <th>Name</th>
                             <th>Description</th>
                             <th>Destination_ID</th>
@@ -120,12 +121,28 @@
                         </thead>
                         <tbody>
                         @foreach ($tours as  $tour)
-                          <tr>
-                            <td>{{ucfirst($tour->id)}}</td>
-                            <td>{{ucfirst($tour->name)}}</td>
-                            <td>{{ucfirst($tour->description)}}</td>
-                            <td>{{$tour->destination_id}}</td>
-                            <td>
+                        <tr>
+                        <td>
+                          <!-- Avatar and ID -->
+                          <div class="d-flex align-items-center">
+                            <!-- Assuming you have a column or function that provides avatar path -->
+                          
+                            <span class="ms-2">{{ ucfirst($tour->id) }}</span>
+                          
+                          
+                          </div>
+                        </td>
+                        <td> 
+                          @if ($tour->profile_image)
+                            <img src="{{ asset('storage/'. $tour->profile_image) }}" alt="Avatar" class="rounded-circle" width="40" height="40">
+                            @else
+                            <img src="{{ asset('asset/img/boracay.jpg') }}" alt="Avatar" class="rounded-circle" width="40" height="40">
+                            @endif
+                          </td>
+                        <td>{{ ucfirst($tour->name) }}</td>
+                        <td>{{ ucfirst($tour->description) }}</td>
+                        <td>{{ $tour->destination_id }}</td>
+                        <td>
                               <div class="form-button-action">
                                 <a
                                   type="button"
