@@ -32,14 +32,18 @@ class UserController extends Controller
     public function store(Request $request)
     {
         //
+        // dd($request->all());
        $user = $request->validate([
         'role_name' => 'required',
-        'name' => 'required',
+        'first_name' => 'required',
+        'last_name' => 'required',
         'email' => 'email|unique:users|required',
         'password' => 'required|min:8',
        ]);
+
+       
 // 
-    //    dd($user);
+      
     User::create($user);
 
     return redirect()->route('users.index')->with('success', 'created user');
@@ -73,9 +77,11 @@ class UserController extends Controller
         // dd($id);
         $user = User::findorFail($id)->latest()->first();
 
+
         $user->update([
-            'name' => $request->name,
             'role_name' => $request->role_name,
+            'first_name' => $request->first_name ,
+            'last_name' => $request->last_name,
             'email' => $request->email,
         ]);
 

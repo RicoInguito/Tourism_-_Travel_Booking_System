@@ -19,11 +19,13 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
+        'first_name',
+        'last_name',
         'role_name',
         'email',
         'password',
     ];
+
 
     /**
      * The attributes that should be hidden for serialization.
@@ -41,11 +43,16 @@ class User extends Authenticatable
      * @var array<string, string>
      */
     protected $casts = [
+        'full_name',
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
 
     public function setPasswordAttribute($value){
         return $this->attributes['password'] = Hash::make($value);
+    }
+
+    public function getFullNameAttribute(){
+        return $this->attributes['first_name']. ' '. $this->attributes['last_name'];    
     }
 }

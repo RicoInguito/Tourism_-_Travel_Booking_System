@@ -41,3 +41,9 @@ Route::resource('tours', ToursController::class);
 Route::resource('bookings', BookingsController::class);
 //Destinations
 Route::resource('destinations', DestinationController::class);
+Auth::routes();
+Route::middleware(['auth'])->group(function () {
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+});
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

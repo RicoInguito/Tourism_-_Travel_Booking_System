@@ -113,7 +113,7 @@
                         @foreach ($users as  $user)
                           <tr>
                             <td>{{ucfirst($user->id)}}</td>
-                            <td>{{ucfirst($user->name)}}</td>
+                            <td>{{ucfirst($user->full_name)}}</td>
                             <td>{{ucfirst($user->role_name)}}</td>
                             <td>{{$user->email}}</td>
                             <td>
