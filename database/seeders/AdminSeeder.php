@@ -18,10 +18,17 @@ class AdminSeeder extends Seeder
             [
                 'first_name' => 'rico',
                 'last_name'  => 'bugwak',      
-                'role_name' => 'admin',
+                'role_name' => 'Admin',
                 'email' => 'rico@gmail.com',
                 'password' => Hash::make('1234567890'),
 
+            ],
+            [
+                'first_name' => 'Merla',
+                'last_name'  => 'Ner',      
+                'role_name' => 'Admin',
+                'email' => 'merla@gmail.com',
+                'password' => Hash::make('merlabuang'),
             ]
         ]);
     }

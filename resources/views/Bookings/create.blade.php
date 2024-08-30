@@ -26,7 +26,19 @@
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
                 <label for="booking_date">Booking Date</label>
-                <input type="text" class="form-control" id="booking_date" name="booking_date" placeholder="Enter Booking Date" required>
+                <input type="date" class="form-control" id="booking_date" name="booking_date" placeholder="Enter Booking Date" required>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="form-group">
+                <label for="start_date">Start Date</label>
+                <input type="date" class="form-control" id="date" name="start_date" placeholder="Enter Start Date" required>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="form-group">
+                <label for="end_date">End Date</label>
+                <input type="date" class="form-control" id="date" name="end_date" placeholder="Enter End Date" required>
               </div>
             </div>
           </div>

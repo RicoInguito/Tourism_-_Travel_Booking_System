@@ -26,13 +26,22 @@
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
                 <label for="location">Location</label>
-                <input type="text" class="form-control" id="location" name="location" placeholder="Enter Destination_ID" required>
+                <select class="form-control" id="location" name="location" required>
+                  <option value="">Select Location</option>
+                  <option value="Boracay">Boracay</option>
+                  <option value="Palawan">Palawan</option>
+                  <option value="Kawasan">Kawasan Falls</option>
+                  <option value="Batanes">Batanes Island</option>
+                  <option value="Chocolate">Chocolate Hills</option>
+                  <option value="Banaue">Banaue Rice Terraces</option>
+                  <option value="others">Others</option>
+                </select>
               </div>
             </div>
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
                 <label for="price">Price</label>
-                <input type="text" class="form-control" id="price" name="price" placeholder="Enter Price" required>
+                <input type="number" class="form-control" id="price" name="price" placeholder="Enter Price" required>
               </div>
             </div>
           </div>

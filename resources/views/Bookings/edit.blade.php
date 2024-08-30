@@ -26,8 +26,20 @@
             </div>
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
-                <label for="date">Booking Date</label>
-                <input type="date" class="form-control"  value="{{$bookings->date}}" id="date" name="date" placeholder="Enter your booking date">
+                <label for="booking_date">Booking Date</label>
+                <input type="date" class="form-control"  value="{{$bookings->booking_date}}" id="date" name="booking_date" placeholder="Enter your booking date">
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="form-group">
+                <label for="start_date">Start Date</label>
+                <input type="date" class="form-control"  value="{{$bookings->start_date}}" id="date" name="start_date" placeholder="Enter your booking date">
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="form-group">
+                <label for="end_date">End Date</label>
+                <input type="date" class="form-control"  value="{{$bookings->end_date}}" id="date" name="end_date" placeholder="Enter your booking date">
               </div>
             </div>
           </div>

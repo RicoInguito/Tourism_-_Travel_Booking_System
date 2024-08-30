@@ -114,6 +114,8 @@
                             <th>User_ID</th>
                             <th>Name</th>
                             <th>Booking Date</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
                             <th>Status</th>
                             <th style="width: 10%">Action</th>
                         </tr>
@@ -125,6 +127,8 @@
                             <td>{{ ucfirst($booking->user_id) }}</td>
                             <td>{{ ucfirst($booking->name) }}</td>
                             <td>{{ ucfirst($booking->booking_date) }}</td>
+                            <td>{{ ucfirst($booking->start_date) }}</td>
+                            <td>{{ ucfirst($booking->end_date) }}</td>
                             <td>{{ ucfirst($booking->status) }}</td>
                             <td>
                                 <div class="form-button-action">

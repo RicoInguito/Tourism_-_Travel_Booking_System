@@ -27,7 +27,7 @@
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
                 <label for="location">Location</label>
-                <input type="location" class="form-control"  value="{{$destinations->location}}" id="location" name="destination_id" placeholder="Enter your Destination Id">
+                <input type="location" class="form-control"  value="{{$destinations->location}}" id="location" name="destination_id" placeholder="Enter your Location">
               </div>
             </div>
             <div class="col-md-6 col-lg-4">
