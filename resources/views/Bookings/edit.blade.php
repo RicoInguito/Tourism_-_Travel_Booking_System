@@ -14,29 +14,29 @@
           <div class="row">
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
-                <label for="name">Booking ID</label>
-                <input type="text" class="form-control" value="{{$bookings->booking_id}}" id="booking_id" name="booking_id" placeholder="Enter ID">
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="form-group">
-                <label for="tour_id">Tour ID</label>
-                <input type="text" class="form-control"  value="{{$bookings->tour_id}}" id="tour_id" name="tour_id" placeholder="Enter Tour ID">
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="form-group">
                 <label for="user_id">User ID</label>
-                <input type="user_id" class="form-control"  value="{{$bookings->user_id}}" id="user_id" name="user_id" placeholder="Enter your User Id">
+                <input type="id" class="form-control"  value="{{$bookings->id}}" id="id" name="id" placeholder="Enter your user_id">
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control"  value="{{$bookings->name}}" id="name" name="name" placeholder="Enter name">
               </div>
             </div>
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
                 <label for="date">Booking Date</label>
-                <input type="date" class="form-control"  value="{{$bookings->date}}" id="date" name="date" placeholder="Enter your User Id">
+                <input type="date" class="form-control"  value="{{$bookings->date}}" id="date" name="date" placeholder="Enter your booking date">
               </div>
             </div>
           </div>
+          <div class="col-md-6 col-lg-4">
+              <div class="form-group">
+                <label for="status">Status</label>
+                <input type="text" class="form-control"  value="{{$bookings->status}}" id="status" name="status" placeholder="Enter status">
+              </div>
+            </div>
           <div class="card-action">
         <button class="btn btn-success">Update</button>
         <button class="btn btn-danger">Cancel</button>

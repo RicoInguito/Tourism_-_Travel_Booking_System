@@ -13,26 +13,27 @@
           <div class="row">
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
-                <label for="booking_id">Booking ID</label>
-                <input type="text" class="form-control" id="booking_id" name="booking_id" placeholder="Enter Booking_ID" required>
+                <label for="id">User_ID</label>
+                <input type="text" class="form-control" id="id" name="id" placeholder="Enter user_id" required>
               </div>
             </div>
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
-                <label for="tour_id">Tour ID</label>
-                <input type="text" class="form-control" id="tour_id" name="tour_id" placeholder="Enter Tour_ID" required>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="form-group">
-                <label for="user_id">User ID</label>
-                <input type="text" class="form-control" id="user_id" name="user_id" placeholder="Enter User_ID" required>
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required>
               </div>
             </div>
             <div class="col-md-6 col-lg-4">
               <div class="form-group">
                 <label for="booking_date">Booking Date</label>
                 <input type="text" class="form-control" id="booking_date" name="booking_date" placeholder="Enter Booking Date" required>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+              <div class="form-group">
+                <label for="status">Status</label>
+                <input type="text" class="form-control" id="status" name="status" placeholder="Enter status" required>
               </div>
             </div>
           </div>

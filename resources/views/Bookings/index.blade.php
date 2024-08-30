@@ -111,27 +111,21 @@
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Tour_ID</th>
                             <th>User_ID</th>
+                            <th>Name</th>
                             <th>Booking Date</th>
+                            <th>Status</th>
                             <th style="width: 10%">Action</th>
                         </tr>
                     </thead>
-                    <!-- <tfoot>
-                        <tr>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Destination ID</th>
-                            <th>Action</th>
-                        </tr>
-                    </tfoot> -->
                     <tbody>
                         @foreach ($bookings as $booking)
                         <tr>
                             <td>{{ ucfirst($booking->id) }}</td>
-                            <td>{{ ucfirst($booking->tour_id) }}</td>
                             <td>{{ ucfirst($booking->user_id) }}</td>
+                            <td>{{ ucfirst($booking->name) }}</td>
                             <td>{{ ucfirst($booking->booking_date) }}</td>
+                            <td>{{ ucfirst($booking->status) }}</td>
                             <td>
                                 <div class="form-button-action">
                                     <a
