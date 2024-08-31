@@ -64,12 +64,9 @@
                 <h3 class="header-text">
                     <em class="header-text">By discovering the unparalleled beauty of the Philippines.</em>
                 </h3><br />
-                @if(auth()->user())
-                @else
                 <a href="/login" class="btn header-btn">Login</a>
                 <br/>
-                @endif
-               
+
                 <a href="asset/#about"><img src="asset/img/direction.png" class="space" alt="Direction"></a>
             </div>
         </div>

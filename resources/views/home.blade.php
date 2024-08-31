@@ -450,7 +450,7 @@
                     aria-expanded="false">
                     <div class="avatar-sm">
                       <img
-                        src='{{asset("dash_board/assets/img/profile.jpg")}}'
+                        src='{{asset("dash_board/assets/img/profile2.jpg")}}'
                         alt="..."
                         class="avatar-img rounded-circle"/>
                     </div>
@@ -465,7 +465,7 @@
                         <div class="user-box">
                           <div class="avatar-lg">
                             <img
-                              src='{{asset("dash_board/assets/img/profile.jpg")}}'
+                              src='{{asset("dash_board/assets/img/profile2.jpg")}}'
                               alt="image profile"
                               class="avatar-img rounded"/>
                           </div>
