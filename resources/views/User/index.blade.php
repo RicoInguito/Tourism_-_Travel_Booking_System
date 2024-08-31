@@ -25,31 +25,6 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
-              <p class="small">Create a new row using this form, make sure you fill them all</p>
-              <form>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="form-group form-group-default">
-                      <label>Name</label>
-                      <input id="addName" type="text" class="form-control" placeholder="fill name" />
-                    </div>
-                  </div>
-                  <div class="col-md-6 pe-0">
-                    <div class="form-group form-group-default">
-                      <label>Position</label>
-                      <input id="addPosition" type="text" class="form-control" placeholder="fill position" />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group form-group-default">
-                      <label>Office</label>
-                      <input id="addOffice" type="text" class="form-control" placeholder="fill office" />
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
             <div class="modal-footer border-0">
               <button type="button" id="addRowButton" class="btn btn-primary">Add</button>
               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>

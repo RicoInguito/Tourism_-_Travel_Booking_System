@@ -116,7 +116,7 @@
               </li>
               <li class="nav-item">
                 <a href="{{route('locations.index')}}">
-                  <i class="fas fa-users"></i>
+                <i class="fa fa-location-arrow" aria-hidden="true"></i>
                   <p>Location</p>
                   <span class="badge badge-secondary"></span>
                 </a>

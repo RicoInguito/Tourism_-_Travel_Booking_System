@@ -126,28 +126,29 @@
                         <div class="service-item">
                             <i class="service-icon fa fa-plane"></i>
                             <h4 class="service-title">Great Transport</h4>
-                            <p class="service-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni voluptatum et, alias vero, reprehenderit doloremque neque dignissimos voluptas.</p>
+                            <p class="service-desc">Providing reliable and comfortable transport options (e.g., airport transfers, shuttle services, or private car rentals).
+                            and unique aspects, like luxurious vehicles, punctuality, or coverage of major destinations.</p>
                         </div>
                     </div>
                     <div class="col-md-3 text-center">
                         <div class="service-item">
                             <i class="service-icon fa fa-usd"></i>
                             <h4 class="service-title">Not Expensive</h4>
-                            <p class="service-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni voluptatum et, alias vero, reprehenderit doloremque neque dignissimos voluptas.</p>
+                            <p class="service-desc">Provide reassurance that customers don't have to compromise on quality despite the lower cost.</p>
                         </div>
                     </div>
                     <div class="col-md-3 text-center">
                         <div class="service-item">
                             <i class="service-icon fa fa-cutlery"></i>
                             <h4 class="service-title">Delicious Food</h4>
-                            <p class="service-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni voluptatum et, alias vero, reprehenderit doloremque neque dignissimos voluptas.</p>
+                            <p class="service-desc">Many top restaurants and eateries prioritize using locally sourced ingredients. This not only supports local farmers but also ensures the freshest produce, meats, and dairy products.</p>
                         </div>
                     </div>
                     <div class="col-md-3 text-center">
                         <div class="service-item">
                             <i class="service-icon fa fa-camera"></i>
                             <h4 class="service-title">Best Photographer's</h4>
-                            <p class="service-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni voluptatum et, alias vero, reprehenderit doloremque neque dignissimos voluptas.</p>
+                            <p class="service-desc">The photography services that provide, emphasizing the skill and creativity of your photographers.</p>
                         </div>
                     </div>
                 </div>
