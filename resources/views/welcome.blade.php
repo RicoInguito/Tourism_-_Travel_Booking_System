@@ -50,6 +50,9 @@
                 <li>
                     <a href="asset/#contact">Contact</a>
                 </li>
+                <!-- <li>
+                    <a href="{{route('register')}}">Register</a>
+                </li> -->
             </ul>
         </div>
         <!-- /Side Menu -->
@@ -61,8 +64,12 @@
                 <h3 class="header-text">
                     <em class="header-text">By discovering the unparalleled beauty of the Philippines.</em>
                 </h3><br />
+                @if(auth()->user())
+                @else
                 <a href="/login" class="btn header-btn">Login</a>
                 <br/>
+                @endif
+               
                 <a href="asset/#about"><img src="asset/img/direction.png" class="space" alt="Direction"></a>
             </div>
         </div>
@@ -172,54 +179,55 @@
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="grid center-block">
                             <figure class="effect-zoe">
-                                <img src="asset/img/boracay.jpg" alt="boracay" class="img-responsive center-block">
+                                <img src="asset/img/Luzon1.jpg" alt="luzon1" class="img-responsive center-block">
                                 <figcaption>
-                                    <h2>Boracay Island</h2>
+                                    <h2>Luzon</h2>
                                     <p class="icon-links">
                                         <a href="asset/#"><i class="fa fa-heart-o"></i></a>
                                         <a href="asset/#"><i class="fa fa-eye"></i></a>
                                         <a href="asset/#"><i class="fa fa-bookmark-o"></i></a>
                                     </p>
                                     <p class="description">
-                                            Boracay is well known throughout the world for its blue seas and white sand beaches. It's a great place to unwind and go water sports like windsurfing, kiteboarding, and snorkeling.
+                                    Luzon is home to some of the Philippines' most stunning tourist spots, from the majestic rice terraces of Banaue to the pristine beaches of Palawan, offering diverse landscapes and rich cultural experiences that captivate every traveler.
                                     </p>
                                 </figcaption>           
                             </figure>
                         </div>
                     </div>
+                    <div class="container">
+                <div class="row">
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="grid center-block">
                             <figure class="effect-zoe">
-                                <img src="asset/img/El Nido.jpg" alt="el_nido" class="img-responsive center-block">
+                                <img src="asset/img/Luzon2.jpg" alt="luzon2" class="img-responsive center-block">
                                 <figcaption>
-                                    <h2>El Nido Palawan</h2>
+                                    <h2>Luzon</h2>
                                     <p class="icon-links">
                                         <a href="asset/#"><i class="fa fa-heart-o"></i></a>
                                         <a href="asset/#"><i class="fa fa-eye"></i></a>
                                         <a href="asset/#"><i class="fa fa-bookmark-o"></i></a>
                                     </p>
                                     <p class="description">
-                                        Known for its stunning limestone cliffs, hidden lagoons, and crystal-clear waters. The Bacuit Archipelago is a must-see.
+                                    Luzon is home to some of the Philippines' most stunning tourist spots, from the majestic rice terraces of Banaue to the pristine beaches of Palawan, offering diverse landscapes and rich cultural experiences that captivate every traveler.
                                     </p>
                                 </figcaption>           
                             </figure>
                         </div>
                     </div>
-                </div>
                 <div class= "row">
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="grid center-block">
                             <figure class="effect-zoe">
-                                <img src="asset/img/kawasan falls.jpg" alt="kawasan_falls" class="img-responsive center-block">
+                                <img src="asset/img/Visayas1.jpg" alt="visayas" class="img-responsive center-block">
                                 <figcaption>
-                                    <h2>Kawasan Falls</h2>
+                                    <h2>Visayas</h2>
                                     <p class="icon-links">
                                         <a href="asset/#"><i class="fa fa-heart-o"></i></a>
                                         <a href="asset/#"><i class="fa fa-eye"></i></a>
                                         <a href="asset/#"><i class="fa fa-bookmark-o"></i></a>
                                     </p>
                                     <p class="description">
-                                       Kawasan Falls is a natural wonder famous for its crystal-clear turquoise pools and cascading waterfalls. The falls are nestled in a lush, tropical forest, providing a refreshing retreat in nature.
+                                       The Visayas region boasts a wealth of breathtaking tourist spots, from the crystal-clear waters of Boracay's beaches to the historic streets of Cebu, providing visitors with a perfect blend of natural beauty and cultural heritage.
                                     </p>
                                 </figcaption>           
                             </figure>
@@ -228,16 +236,16 @@
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="grid center-block">
                             <figure class="effect-zoe">
-                                <img src="asset/img/batanes.jpg" alt="batanes" class="img-responsive center-block">
+                                <img src="asset/img/Visayas2.jpg" alt="visayas" class="img-responsive center-block">
                                 <figcaption>
-                                    <h2>Batanes Island</h2>
+                                    <h2>Visayas</h2>
                                     <p class="icon-links">
                                         <a href="asset/#"><i class="fa fa-heart-o"></i></a>
                                         <a href="asset/#"><i class="fa fa-eye"></i></a>
                                         <a href="asset/#"><i class="fa fa-bookmark-o"></i></a>
                                     </p>
                                     <p class="description">
-                                    Batanes is known for its dramatic landscapes, including vast rolling hills, rugged cliffs, and traditional Ivatan stone houses. The remote location and the unique culture of the Ivatan people make it a distinct destination.
+                                        The Visayas region boasts a wealth of breathtaking tourist spots, from the crystal-clear waters of Boracay's beaches to the historic streets of Cebu, providing visitors with a perfect blend of natural beauty and cultural heritage.
                                     </p>
                                 </figcaption>           
                             </figure>
@@ -248,16 +256,16 @@
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="grid center-block">
                             <figure class="effect-zoe">
-                                <img src="asset/img/bohol.jpg" alt="bohol" class="img-responsive center-block">
+                                <img src="asset/img/Mindanao1.jpg" alt="mindanao" class="img-responsive center-block">
                                 <figcaption>
-                                    <h2>Chocolate Hills</h2>
+                                    <h2>Mindanao</h2>
                                     <p class="icon-links">
                                         <a href="asset/#"><i class="fa fa-heart-o"></i></a>
                                         <a href="asset/#"><i class="fa fa-eye"></i></a>
                                         <a href="asset/#"><i class="fa fa-bookmark-o"></i></a>
                                     </p>
                                     <p class="description">
-                                    The Chocolate Hills are a geological formation and a famous tourist attraction in Bohol. Visitors can get a panoramic view from the Chocolate Hills Complex or Sagbayan Peak.
+                                        Mindanao is a treasure trove of tourist spots, featuring the awe-inspiring Mount Apo, the vibrant cultural scenes of Davao, and the pristine shores of Siargao, making it a paradise for adventurers and nature lovers alike.
                                     </p>
                                 </figcaption>           
                             </figure>
@@ -266,16 +274,16 @@
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="grid center-block">
                             <figure class="effect-zoe">
-                                <img src="asset/img/banaue.jpg" alt="banaue" class="img-responsive center-block">
+                                <img src="asset/img/Mindanao2.jpg" alt="mindanao" class="img-responsive center-block">
                                 <figcaption>
-                                    <h2>Banaue Rice Terraces</h2>
+                                    <h2>Mindanao</h2>
                                     <p class="icon-links">
                                         <a href="asset/#"><i class="fa fa-heart-o"></i></a>
                                         <a href="asset/#"><i class="fa fa-eye"></i></a>
                                         <a href="asset/#"><i class="fa fa-bookmark-o"></i></a>
                                     </p>
                                     <p class="description">
-                                       Often referred to as the "Eighth Wonder of the World," these terraces are an impressive example of ancient engineering and are still used for rice cultivation.
+                                      Mindanao is a treasure trove of tourist spots, featuring the awe-inspiring Mount Apo, the vibrant cultural scenes of Davao, and the pristine shores of Siargao, making it a paradise for adventurers and nature lovers alike.
                                     </p>
                                 </figcaption>           
                             </figure>
